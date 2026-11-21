@@ -1,0 +1,9 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {pipeline} from 'node:stream/promises';import {Readable,Transform} from 'node:stream';import {execFile} from 'node:child_process';import {promisify} from 'node:util';
+import {extractZip} from '../lib/unzip.mjs';
+if(process.platform==='linux'||process.argv.includes('--linux')){await import('./setup-linux.mjs');process.exit(0);}
+if(process.platform!=='win32'||process.arch!=='x64')throw new Error('Automatic setup supports Windows x64 and Ubuntu Linux x64.');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..','data','ai');fs.mkdirSync(root,{recursive:true});
+const sources=[['llama-runtime.zip','https://github.com/ggml-org/llama.cpp/releases/download/b12359/llama-b12359-bin-win-cpu-x64.zip'],['Qwen3-0.6B-Q4_K_M.gguf','https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/main/Qwen3-0.6B-Q4_K_M.gguf'],['Qwen-LICENSE','https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/main/LICENSE'],['llama-LICENSE','https://raw.githubusercontent.com/ggml-org/llama.cpp/b12359/LICENSE']];
+for(const [name,url] of sources){const file=path.join(root,name);if(fs.existsSync(file)&&fs.statSync(file).size>100){console.log('Already available: '+name);continue;}console.log('Downloading '+name);const response=await fetch(url,{signal:AbortSignal.timeout(600000)});if(!response.ok)throw new Error(name+': HTTP '+response.status);let bytes=0,last=0;const progress=new Transform({transform(chunk,encoding,callback){bytes+=chunk.length;if(bytes-last>50*1024*1024){last=bytes;console.log(Math.round(bytes/1024/1024)+' MB');}callback(null,chunk);}});await pipeline(Readable.fromWeb(response.body),progress,fs.createWriteStream(file+'.download'));fs.renameSync(file+'.download',file);}
+extractZip(path.join(root,'llama-runtime.zip'),path.join(root,'runtime'));
+console.log('Local Qwen3 chat is ready. Start Waypoint again.');

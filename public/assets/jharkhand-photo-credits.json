@@ -1,0 +1,46 @@
+{
+  "Hazaribagh": {
+    "image": "/assets/places/hazaribagh-hazaribagh-wildlife-sanctuary.jpg",
+    "subject": "Hazaribagh Wildlife Sanctuary",
+    "source": "https://commons.wikimedia.org/wiki/File:Among_the_sals_of_Jharkhand.jpg",
+    "artist": "SUMIT BITTU",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file": "hazaribagh-jh.jpg"
+  },
+  "Ranchi": {
+    "file": "ranchi-jh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ranchi_Cityscape.jpg",
+    "artist": "Sankara Subramanian",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "Ramgarh": {
+    "file": "ramgarh-jh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Maa_Chhinnamasta_Temple.jpg",
+    "artist": "Kuarun",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Dhanbad": {
+    "file": "dhanbad-jh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_of_dhanbad.jpg",
+    "artist": "Xyzabc1817",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "Jamshedpur": {
+    "file": "jamshedpur-jh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Jublie_Park_on_March_Night.jpg",
+    "artist": "Ashokinder",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Koderma": {
+    "file": "koderma-jh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Koderma_Railway_station.JPG",
+    "artist": "Anup Sadi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+}

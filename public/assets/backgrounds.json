@@ -1,0 +1,362 @@
+[
+  {
+    "file": "/assets/backgrounds/01-sunset-purple.jpg",
+    "location": "Lisbon sunset",
+    "period": "sunset",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/2267057.jpg",
+      "subject": "Lisbon",
+      "artist": "Deensel",
+      "source": "https://commons.wikimedia.org/wiki/File:Lisbon_%2836831596786%29_%28cropped%29.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/02-sunset-orange.jpg",
+    "location": "Sunset on the Haldi River",
+    "period": "sunset",
+    "palette": "orange",
+    "credit": {
+      "image": "/assets/destinations/1344377.jpg",
+      "subject": "Haldia",
+      "artist": "Subhrajyoti07",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_on_the_Banks_of_Haldi_River%2C_India.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/03-sunset-red.jpg",
+    "location": "Godavari sunset",
+    "period": "sunset",
+    "palette": "red",
+    "credit": {
+      "image": "/assets/destinations/1258932.jpg",
+      "subject": "Rajamahendravaram",
+      "artist": "Hariya1234",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_at_Godavri.JPG",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/04-night-purple.jpg",
+    "location": "Bergen at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/3161732.jpg",
+      "subject": "Bergen",
+      "artist": "TomasEE",
+      "source": "https://commons.wikimedia.org/wiki/File:Bergen_panorama_at_night_-_panoramio_%281%29.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/05-day-natural.jpg",
+    "location": "Lago di Braies, Dolomites",
+    "period": "day",
+    "palette": "natural",
+    "credit": {
+      "source": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "changes": "Cropped and resized."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/06-night-purple.jpg",
+    "location": "Udaipur after dusk",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1253986.jpg",
+      "subject": "Udaipur",
+      "artist": "Geri from Biel/Bienne, Schweiz",
+      "source": "https://commons.wikimedia.org/wiki/File:Evening_view%2C_City_Palace%2C_Udaipur.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/07-sunset-orange.jpg",
+    "location": "Sydney Harbour at dusk",
+    "period": "sunset",
+    "palette": "orange",
+    "credit": {
+      "image": "/assets/destinations/2147714.jpg",
+      "subject": "Sydney",
+      "artist": "Benh LIEU SONG (Flickr)",
+      "source": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/08-sunset-red.jpg",
+    "location": "Paris at dusk",
+    "period": "sunset",
+    "palette": "red",
+    "credit": {
+      "source": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/09-night-purple.jpg",
+    "location": "Colombo at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1248991.jpg",
+      "subject": "Colombo",
+      "artist": "Gihanud2001",
+      "source": "https://commons.wikimedia.org/wiki/File:Colombo_city_skyline_at_night.png",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/10-day-natural.jpg",
+    "location": "Leh, Ladakh",
+    "period": "day",
+    "palette": "natural",
+    "credit": {
+      "image": "/assets/destinations/1264976.jpg",
+      "subject": "Leh",
+      "artist": "Anirvan Shukla",
+      "source": "https://commons.wikimedia.org/wiki/File:Leh_City_seen_from_Shanti_Stupa.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cropped and resized."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/11-night-purple.jpg",
+    "location": "Howrah Bridge at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1270396.jpg",
+      "subject": "Howrah",
+      "artist": "Apoorva Karlekar",
+      "source": "https://commons.wikimedia.org/wiki/File:Howrah_bridge_at_night.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/12-sunset-red.jpg",
+    "location": "Dayton sunset",
+    "period": "sunset",
+    "palette": "red",
+    "credit": {
+      "image": "/assets/destinations/4509884.jpg",
+      "subject": "Dayton, Ohio",
+      "artist": "Blervis",
+      "source": "https://commons.wikimedia.org/wiki/File:Dayton_Skyline_-_Sunset_September_2022_%28cropped%29.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/13-sunset-orange.jpg",
+    "location": "Kyoto at dusk",
+    "period": "sunset",
+    "palette": "orange",
+    "credit": {
+      "source": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/14-sunset-purple.jpg",
+    "location": "Imphal at dusk",
+    "period": "sunset",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1269771.jpg",
+      "subject": "Imphal",
+      "artist": "DeepanjanGhosh",
+      "source": "https://commons.wikimedia.org/wiki/File:Imphal_At_Dusk.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/15-day-natural.jpg",
+    "location": "The Goa coast",
+    "period": "day",
+    "palette": "natural",
+    "credit": {
+      "source": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "changes": "Cropped and resized."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/16-night-purple.jpg",
+    "location": "Patratu Valley at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/places/ramgarh-patratu-valley.jpg",
+      "subject": "Patratu",
+      "source": "https://commons.wikimedia.org/wiki/File:Patratu_Valley_at_night.jpg",
+      "artist": "Jharkhand Tourism Department",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/17-night-orange.jpg",
+    "location": "Jaisalmer after dusk",
+    "period": "night",
+    "palette": "orange",
+    "credit": {
+      "image": "/assets/destinations/1269507.jpg",
+      "subject": "Jaisalmer",
+      "artist": "Adrian Sulc",
+      "source": "https://commons.wikimedia.org/wiki/File:Jaisalmer_Fort.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/18-night-purple.jpg",
+    "location": "Hazaribagh at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1270164.jpg",
+      "subject": "Hazaribagh",
+      "artist": "Goongun Singj",
+      "source": "https://commons.wikimedia.org/wiki/File:Hazaribagh_night_scene.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/19-night-red.jpg",
+    "location": "An evening in Oslo",
+    "period": "night",
+    "palette": "red",
+    "credit": {
+      "image": "/assets/destinations/3143244.jpg",
+      "subject": "Oslo",
+      "artist": "Orjanarvola",
+      "source": "https://commons.wikimedia.org/wiki/File:Nationaltheatret_evening.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/20-day-natural.jpg",
+    "location": "Cape Town coast",
+    "period": "day",
+    "palette": "natural",
+    "credit": {
+      "image": "/assets/destinations/3369157.jpg",
+      "subject": "Cape Town",
+      "artist": "Der Berzerker from Washington, DC, USA",
+      "source": "https://commons.wikimedia.org/wiki/File:Camps_bay_%2853460319478%29_%28cropped%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Cropped and resized."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/21-night-purple.jpg",
+    "location": "Mumbai at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1275901.jpg",
+      "subject": "Bhiwandi",
+      "artist": "Premshree Pillai",
+      "source": "https://commons.wikimedia.org/wiki/File:Mumbai_Bombay_Night.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/22-night-red.jpg",
+    "location": "Mustafa Castle at night",
+    "period": "night",
+    "palette": "red",
+    "credit": {
+      "image": "/assets/destinations/1263214.jpg",
+      "subject": "Meerut",
+      "artist": "MMKhan22",
+      "source": "https://commons.wikimedia.org/wiki/File:Mustafa_Castle_--_night_shot.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/23-night-purple.jpg",
+    "location": "Jubilee Park at night",
+    "period": "night",
+    "palette": "purple",
+    "credit": {
+      "image": "/assets/destinations/1269300.jpg",
+      "subject": "Jamshedpur",
+      "artist": "Ashokinder",
+      "source": "https://commons.wikimedia.org/wiki/File:Jublie_Park_on_March_Night.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/24-night-orange.jpg",
+    "location": "Anantapur at night",
+    "period": "night",
+    "palette": "orange",
+    "credit": {
+      "image": "/assets/destinations/1278672.jpg",
+      "subject": "Anantapur",
+      "artist": "Maheshrig",
+      "source": "https://commons.wikimedia.org/wiki/File:Anantapur_Clock_tower_at_night.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cropped and resized; purple, orange or red split-tone colour grading."
+    }
+  },
+  {
+    "file": "/assets/backgrounds/25-day-natural.jpg",
+    "location": "Cinque Terre, Italy",
+    "period": "day",
+    "palette": "natural",
+    "credit": {
+      "source": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "changes": "Cropped and resized."
+    }
+  }
+]

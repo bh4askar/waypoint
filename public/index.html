@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7664e9">
+  <meta name="description" content="Find your next great escape. Waypoint turns your interests, time and budget into a thoughtful, detailed travel itinerary.">
+  <title>Waypoint — A little wonder. A better way to travel.</title>
+  <script src="./launch-guard.js"></script>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/backgrounds/01-sunset-purple.jpg" as="image">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./refinements.css">
+  <link rel="stylesheet" href="./vendor/leaflet.css">
+  <link rel="stylesheet" href="./glass.css">
+  <link rel="stylesheet" href="./usability.css">
+  <link rel="stylesheet" href="./performance.css">
+  <script src="/vendor/leaflet.js" defer></script>
+  <script type="module" src="/app.js"></script>
+<link rel="stylesheet" href="/photo-gallery.css">
+</head>
+<body>
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-15a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v2"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7V5a2 2 0 0 0-2-2L5 6a3 3 0 0 0 0 6h15v9H5a3 3 0 0 1-3-3V9m18 3h-5v5h5"/><path d="M17 14.5h.1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10Z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Zm8-1v4m-2-2h4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m2 20 8-15 5 9 3-5 4 11H2Zm5-9 3 2 2-3"/></symbol>
+    <symbol id="i-beach" viewBox="0 0 24 24"><path d="M3 13a9 9 0 0 1 18 0c-2-2-4-2-6 0-2-2-4-2-6 0-2-2-4-2-6 0Zm9 0v7m-3 0h6M12 2v2"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3c-8 0-17 2-16 11 1 9 17 7 16-11ZM4 20 15 9"/></symbol>
+    <symbol id="i-culture" viewBox="0 0 24 24"><path d="m3 8 9-5 9 5H3Zm2 3v7m5-7v7m4-7v7m5-7v7M2 21h20M3 18h18"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M5 3v6a3 3 0 0 0 6 0V3M8 3v18m12 0V3c-4 2-4 8 0 9"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M4 8h16l1 13H3L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 8V3l-3 3a9 9 0 1 0 3 9M21 3h-5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-3 3v-11A8.5 8.5 0 0 1 9.5 3h3a8.5 8.5 0 0 1 8.5 8.5Z"/><path d="M7 11h.1m5 0h.1m5 0h.1"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9L2 9 22 2ZM11 13 22 2"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M5 16a4 4 0 0 1 0-8 7 7 0 0 1 13-2 5 5 0 0 1 0 10H5Zm2 3-1 3m6-3-1 3m6-3-1 3"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-5-7 5Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8V4Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M5 6l1 15h12l1-15M9 6V3h6v3M10 10v7m4-7v7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H3v18h18v-7"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#" data-home aria-label="Waypoint home"><span class="brand-mark"><svg><use href="#i-compass"/></svg></span>waypoint<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><button type="button" class="nav-ai-chip" id="nav-discovery">✧ AI chat</button><a href="#explore" data-explore>Explore</a><button type="button" data-my-trips>My trips <span class="nav-count" id="trip-count" hidden>0</span></button><a href="#how-it-works" data-how>How it works</a></nav>
+      <div class="nav-actions"><button class="icon-button theme-toggle" type="button" id="theme-toggle" aria-label="Switch to dark mode"><svg><use href="#i-moon"/></svg></button><button class="sign-in" type="button" id="sign-in"><span class="google-g">G</span><span id="sign-in-label">Sign in</span></button><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button></div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Mobile navigation"><a href="#explore" data-explore>Explore destinations</a><a href="#how-it-works" data-how>How it works</a><button data-my-trips>My trips</button></nav>
+  </header>
+
+  <main id="main">
+    <div id="home-view">
+      <section class="hero" aria-label="Discover your next destination">
+        <div class="hero-slides" id="hero-slides" aria-hidden="true"><img class="hero-slide active" src="/assets/backgrounds/01-sunset-purple.jpg" alt="" fetchpriority="high"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow"><span class="tiny-spark">✧</span> A LITTLE WONDER. A BETTER WAY TO TRAVEL.</div>
+          <h1>Your travel companion.<br>A world of <span class="wonder-word">possibilities.</span></h1>
+          <p>A mountain adventure, a quiet coast, a whole new story.<br>Tell us what you love. We’ll find your somewhere.</p>
+          <div class="discovery-workspace">
+            <div class="discovery-chat-side"><div class="discovery-orb" aria-hidden="true"></div><div class="discovery-welcome"><strong>Hello, I’m Waypoint.</strong><span>Your next adventure starts with a little conversation.</span></div><div class="discovery-messages" id="discovery-messages" role="log" aria-live="polite"><div class="discovery-message assistant"><span class="mini-orb"></span><p>What kind of escape are you dreaming of? Tell me your mood, interests or a place you’ve always wanted to see.</p></div></div><div class="trip-prompt-chips"><button type="button" data-trip-prompt="I want an adventurous trip in India">✧ A little adventure</button><button type="button" data-trip-prompt="I want a relaxing beach getaway">☀ Beach days</button><button type="button" data-trip-prompt="I love mountains and scenic nature">△ Mountain escape</button><button type="button" data-trip-prompt="I want local food and historic culture">◇ Food & culture</button></div><form class="discovery-composer" id="discovery-form"><input id="discovery-input" placeholder="Somewhere adventurous, with mountains and local food…" aria-label="Describe your dream trip" maxlength="800" required><button type="submit" id="discovery-submit" aria-label="Find matching destinations"><svg><use href="#i-spark"/></svg></button></form><button class="quick-search-toggle" id="quick-search-toggle" type="button">Have a place in mind? Search all 1,100 destinations <svg><use href="#i-arrow"/></svg></button></div>
+            <div class="discovery-recommendations"><div class="discovery-recommendation-heading"><span>For your next chapter</span><small id="discovery-state">A few places to start dreaming</small></div><div class="discovery-suggestions" id="discovery-suggestions"></div></div>
+          </div>
+          <form id="hero-form" class="glass-search" autocomplete="off" hidden>
+            <div class="search-field destination-field"><svg class="field-icon"><use href="#i-pin"/></svg><div><label for="destination-input">Where to?</label><input id="destination-input" placeholder="Find your somewhere" role="combobox" aria-autocomplete="list" aria-controls="destination-results" aria-expanded="false"></div><div class="destination-popover" id="destination-results" role="listbox" hidden></div></div>
+            <div class="search-field"><svg class="field-icon"><use href="#i-calendar"/></svg><div><label for="hero-date">Starting on</label><input type="date" id="hero-date" required aria-label="Trip start date"></div></div>
+            <div class="search-field compact-field"><svg class="field-icon"><use href="#i-clock"/></svg><div><label for="hero-days">Duration</label><select id="hero-days" aria-label="Trip duration"><option value="1">1 day</option><option value="2">2 days</option><option value="3" selected>3 days</option><option value="4">4 days</option><option value="5">5 days</option><option value="6">6 days</option><option value="7">7 days</option></select></div></div>
+            <div class="search-field compact-field"><svg class="field-icon"><use href="#i-users"/></svg><div><label for="hero-travellers">Travellers</label><select id="hero-travellers"><option value="1">1 traveller</option><option value="2" selected>2 travellers</option><option value="3">3 travellers</option><option value="4">4 travellers</option><option value="5">5 travellers</option><option value="6">6 travellers</option><option value="8">8 travellers</option><option value="12">12 travellers</option></select></div></div>
+            <div class="search-field compact-field hero-budget"><svg class="field-icon"><use href="#i-wallet"/></svg><div><label for="hero-budget">Budget · INR</label><input type="number" id="hero-budget" value="18000" min="1" max="10000000" aria-label="Total group budget in Indian rupees"></div></div>
+            <button type="submit" class="button primary plan-button"><svg><use href="#i-spark"/></svg>Plan my trip<svg class="button-arrow"><use href="#i-arrow"/></svg></button>
+          </form>
+          <div class="hero-note"><svg><use href="#i-check"/></svg>1,100 destinations <span>·</span> Made for your budget <span>·</span> Yours to make your own</div>
+        </div>
+        <div class="hero-bottom"><div class="photo-location"><svg><use href="#i-pin"/></svg><span id="hero-location">Lisbon sunset</span><span class="photo-caption">A glimpse of somewhere beautiful</span></div><div class="slideshow-controls"><span class="slide-number" id="slide-number">01 <span>/ 25</span></span><div class="slide-dots" id="slide-dots" role="group" aria-label="Choose a background photo"></div><button class="icon-button pause-slides" id="pause-slides" aria-label="Pause destination slideshow"><svg><use href="#i-pause"/></svg></button></div></div>
+      </section>
+
+      <div class="trust-strip"><span><svg><use href="#i-compass"/></svg>Thoughtful plans, not crowded checklists</span><span><svg><use href="#i-wallet"/></svg>A budget you can actually see</span><span><svg><use href="#i-map"/></svg>Little discoveries along the way</span></div>
+
+      <section class="section explore-section" id="explore">
+        <div class="section-heading reveal"><div><span class="eyebrow">FOLLOW YOUR CURIOSITY</span><h2>Find your kind of <span>somewhere.</span></h2><p>From familiar favourites to places you haven’t thought of yet.</p></div><button class="text-link" id="browse-all">Explore all 1,100<svg><use href="#i-arrow"/></svg></button></div>
+        <div class="category-tabs reveal" id="category-tabs" aria-label="Filter destinations"><button class="category-pill active" data-category="all"><svg><use href="#i-compass"/></svg>All escapes</button><button class="category-pill" data-category="nature"><svg><use href="#i-leaf"/></svg>Nature</button><button class="category-pill" data-category="beach"><svg><use href="#i-beach"/></svg>By the sea</button><button class="category-pill" data-category="culture"><svg><use href="#i-culture"/></svg>Culture & history</button><button class="category-pill" data-category="adventure"><svg><use href="#i-mountain"/></svg>Adventure</button><button class="category-pill" data-category="food"><svg><use href="#i-food"/></svg>Food trails</button></div>
+        <div class="destination-grid" id="featured-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="jharkhand-section section" id="jharkhand">
+        <div class="jharkhand-intro reveal"><div><span class="eyebrow">CLOSER TO HOME. FULL OF WONDER.</span><h2>Meet <span>Jharkhand.</span></h2><p>Forest paths, waterfall days and quiet lakes.<br>Six cities, each with its own story to explore.</p></div><button class="button secondary" id="explore-jharkhand">Explore Jharkhand<svg><use href="#i-arrow"/></svg></button></div>
+        <div class="jharkhand-grid" id="jharkhand-grid"></div>
+      </section>
+
+      <section class="section how-section" id="how-it-works">
+        <div class="how-art reveal"><img src="/assets/kerala.jpg" alt="Palm-lined backwaters in Kerala" loading="lazy"><div class="floating-note"><span class="note-icon"><svg><use href="#i-spark"/></svg></span><div><strong>A trip that feels like you.</strong><span>More discovering. Less deciding.</span></div></div><div class="art-tag"><svg><use href="#i-pin"/></svg>Kerala, India</div></div>
+        <div class="how-content reveal"><span class="eyebrow">THE GOOD PART STARTS HERE</span><h2>Less planning.<br><span>More living.</span></h2><p>You bring the daydream. We’ll turn it into a thoughtful plan, with enough detail to feel ready and enough freedom to get a little lost.</p><div class="how-step"><span>01</span><div><h3>Tell us your kind of trip</h3><p>Choose your destination, budget and what you love.</p></div></div><div class="how-step"><span>02</span><div><h3>Find your rhythm</h3><p>Get daily stops, meal ideas and travel guidance at your pace.</p></div></div><div class="how-step"><span>03</span><div><h3>Make it yours</h3><p>Adjust your plan, save it and take a PDF along for the ride.</p></div></div><button class="button primary" id="how-plan">Find my next escape<svg><use href="#i-arrow"/></svg></button></div>
+      </section>
+
+      <section class="section discovery-banner reveal"><div class="banner-symbol"><svg><use href="#i-compass"/></svg></div><span class="eyebrow">YOUR NEXT STORY IS OUT THERE</span><h2>A weekend away.<br>A whole new perspective.</h2><p>950 destinations in India. 150 a little further afield.<br>Start with a conversation. Leave with a plan.</p><button class="button primary" id="banner-plan">Let’s go somewhere<svg><use href="#i-arrow"/></svg></button></section>
+    </div>
+
+    <section id="trip-view" class="trip-view" hidden tabindex="-1" aria-label="Your detailed itinerary"><div id="trip-content"></div></section>
+
+    <footer class="site-footer"><div class="footer-main"><div><a class="brand" href="#" data-home><span class="brand-mark"><svg><use href="#i-compass"/></svg></span>waypoint<span class="brand-dot">.</span></a><p>A little wonder.<br>A better way to travel.</p></div><div><h3>Your next escape</h3><a href="#explore" data-explore>Explore destinations</a><button data-my-trips>Saved trips</button><button id="footer-jharkhand">Discover Jharkhand</button></div><div><h3>A little guidance</h3><a href="#how-it-works" data-how>How it works</a><button id="footer-faq">Ask Waypoint</button><button id="about-data">Sources & credits</button></div><div class="footer-invite"><span>GO SOMEWHERE THAT<br>MAKES YOU FEEL SOMETHING.</span><svg><use href="#i-arrow"/></svg></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Waypoint. Made for the curious.</span><span>Travel thoughtfully. Leave places better.</span></div></footer>
+  </main>
+
+  <button class="chat-launcher" id="chat-launcher" aria-label="Open Ask Waypoint" aria-expanded="false" aria-controls="chat-panel"><span class="chat-launcher-icon"><svg><use href="#i-spark"/></svg></span><span>Ask Waypoint</span><span class="chat-online-dot"></span></button>
+  <aside class="chat-panel" id="chat-panel" hidden aria-label="Ask Waypoint FAQ assistant"><div class="chat-header"><div class="chat-avatar"><svg><use href="#i-compass"/></svg></div><div><h2>Ask Waypoint</h2><span>Your little travel companion</span></div><button class="icon-button" id="chat-close" aria-label="Minimise chat"><svg><use href="#i-chevron"/></svg></button></div><div class="chat-messages" id="chat-messages" role="log" aria-live="polite"><div class="chat-message bot"><span class="message-avatar"><svg><use href="#i-spark"/></svg></span><div>Hi, curious traveller 👋<br>I can help you find your way around Waypoint. What would you like to know?</div></div></div><div class="chat-suggestions" id="chat-suggestions"><button>How do I plan a trip?</button><button>Can I download a PDF?</button><button>What does the budget include?</button></div><form class="chat-input" id="chat-form"><input id="chat-message" placeholder="Ask a little question…" maxlength="500" aria-label="Message to Ask Waypoint" required><button class="icon-button" type="submit" aria-label="Send message"><svg><use href="#i-send"/></svg></button></form><div class="chat-footnote">Answers about Waypoint · No live travel advice</div></aside>
+
+  <dialog class="dialog planner-dialog" id="planner-dialog"><button class="dialog-close icon-button" data-close aria-label="Close trip planner"><svg><use href="#i-close"/></svg></button><div class="planner-intro"><span class="eyebrow">LET’S MAKE IT YOURS</span><h2>A little about<br><span>your next escape.</span></h2><p>The best trips have your personality in them.</p></div><form id="planner-form"><div class="form-grid"><label class="form-label full-width">Destination<select id="planner-destination" required></select></label><label class="form-label">Start date<input type="date" id="planner-date" required></label><label class="form-label">Duration<select id="planner-days"></select></label><label class="form-label">Travellers<select id="planner-travellers"></select></label><label class="form-label">Currency<select id="planner-currency"><option value="INR">INR — Indian rupee</option><option value="USD">USD — US dollar</option><option value="EUR">EUR — Euro</option><option value="GBP">GBP — British pound</option></select></label><label class="form-label full-width">Total trip budget <span class="field-hint">For your whole group · excludes flights</span><input type="number" id="planner-budget" min="1" max="10000000" value="18000" required></label></div><fieldset class="interest-fieldset"><legend>What draws you in?</legend><div class="interest-options" id="interest-options"></div></fieldset><fieldset class="pace-fieldset"><legend>Find your rhythm</legend><div class="pace-options"><label><input type="radio" name="pace" value="relaxed"><span><svg><use href="#i-leaf"/></svg><strong>Unhurried</strong><small>Room to breathe</small></span></label><label><input type="radio" name="pace" value="balanced" checked><span><svg><use href="#i-compass"/></svg><strong>A little of both</strong><small>Our happy middle</small></span></label><label><input type="radio" name="pace" value="active"><span><svg><use href="#i-mountain"/></svg><strong>Make the most</strong><small>More to discover</small></span></label></div></fieldset><label class="form-label notes-label">Anything else?<span class="field-hint">Optional · Tell us what you love</span><textarea id="planner-notes" rows="2" maxlength="600" placeholder="We love historic places and local food, with time for a coffee stop…"></textarea></label><label id="ai-option" class="ai-option" hidden><input type="checkbox" id="use-ai"><span>Enrich descriptions with my local AI model<small>Optional · May take a little longer</small></span></label><div class="form-error" id="planner-error" role="alert" hidden></div><button class="button primary generate-button" id="generate-button" type="submit"><svg><use href="#i-spark"/></svg>Create my itinerary<svg><use href="#i-arrow"/></svg></button><p class="planner-footnote">Detailed days. Flexible moments. Costs and travel times are estimates.</p></form></dialog>
+
+  <dialog class="dialog browse-dialog" id="browse-dialog"><button class="dialog-close icon-button" data-close aria-label="Close destinations"><svg><use href="#i-close"/></svg></button><span class="eyebrow">THERE’S A LOT OUT THERE</span><h2 id="browse-title">Find your <span>somewhere.</span></h2><div class="browse-search"><svg><use href="#i-search"/></svg><input id="browse-search" placeholder="Search a city, state or country…" aria-label="Search destinations"></div><div class="browse-filters"><button class="category-pill active" data-country="">Everywhere</button><button class="category-pill" data-country="IN">India</button><button class="category-pill" data-region="Jharkhand">Jharkhand</button><select id="browse-guide-filter" aria-label="Filter by guide availability"><option value="all">All destinations</option><option value="ready">Included guides</option></select></div><p class="results-count" id="browse-count"></p><div class="browse-grid" id="browse-grid"></div><button class="button secondary load-more" id="load-more">Show me more<svg><use href="#i-chevron"/></svg></button></dialog>
+
+  <dialog class="dialog saved-dialog" id="saved-dialog"><button class="dialog-close icon-button" data-close aria-label="Close saved trips"><svg><use href="#i-close"/></svg></button><span class="eyebrow">A LITTLE SOMETHING TO LOOK FORWARD TO</span><h2>Your next <span>adventures.</span></h2><div class="saved-tabs"><button class="active" data-saved-tab="trips">My trips</button><button data-saved-tab="favourites">Favourite places</button></div><div id="saved-content"></div></dialog>
+
+  <dialog class="dialog small-dialog" id="account-dialog"><button class="dialog-close icon-button" data-close aria-label="Close account"><svg><use href="#i-close"/></svg></button><div id="account-content"></div></dialog>
+  <dialog class="dialog small-dialog" id="credits-dialog"><button class="dialog-close icon-button" data-close aria-label="Close credits"><svg><use href="#i-close"/></svg></button><span class="eyebrow">A LITTLE TRANSPARENCY</span><h2>Good plans start<br>with <span>good sources.</span></h2><p>Destination geography comes from <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0). Included attraction descriptions are adapted from <a href="https://en.wikivoyage.org/" target="_blank" rel="noopener">Wikivoyage contributors</a> (CC BY-SA 4.0), alongside linked Jharkhand district and forest-department sources.</p><p>Nearby-place discovery uses <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> (ODbL). Hero photographs are from Unsplash; Jharkhand photo credits, where available, are listed in the project’s credits file.</p><p>Information is a snapshot. Check venue links for current hours, tickets, access and conditions. Budgets and transfer times are planning estimates.</p><p>Your local saved trips stay in this browser. Account trips are stored by this Waypoint server. Google sign-in requests only your basic profile and email.</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog class="dialog map-dialog" id="map-dialog"><button class="dialog-close icon-button" data-close aria-label="Close map"><svg><use href="#i-close"/></svg></button><span class="eyebrow">A LITTLE PERSPECTIVE</span><h2 id="map-title">Your journey, on the map.</h2><div class="map-dialog-tools"><div id="map-day-tabs" class="map-day-tabs"></div><button class="category-pill" id="map-fit" type="button"><svg><use href="#i-compass"/></svg>Fit the journey</button></div><div class="map-dialog-layout"><div class="trip-map" id="trip-map"></div><div class="map-stop-list" id="map-stop-list"></div></div><p class="map-status" id="map-status">Choose a day to see your sourced stops.</p><p class="map-service-note">Map data © OpenStreetMap contributors · Road routes by OSRM when available · No live traffic.</p></dialog>
+  <div class="loading-overlay" id="loading-overlay" hidden><div class="loading-orbit"><svg><use href="#i-compass"/></svg></div><span class="eyebrow">A LITTLE MAGIC, A LITTLE THOUGHT</span><h2>Finding your rhythm…</h2><p id="loading-message">Matching places to your interests and grouping nearby stops.</p></div>
+</body>
+</html>

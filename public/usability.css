@@ -1,0 +1,29 @@
+/* Keep the glass treatment readable on laptop and phone screens. */
+.discovery-workspace{min-height:450px}
+.discovery-welcome strong{font-size:20px}
+.discovery-welcome>span{font-size:12px;line-height:1.6}
+.discovery-messages{max-height:150px}
+.discovery-message p{font-size:13px;line-height:1.7}
+.trip-prompt-chips button{font-size:11px;padding:8px 11px}
+.discovery-composer input{font-size:13px;line-height:1.5}
+.discovery-composer button{width:40px;height:40px}
+.quick-search-toggle{font-size:11px;line-height:1.6;text-align:left}
+.discovery-recommendation-heading>span{font-size:13px}
+.discovery-recommendation-heading small{font-size:10px;line-height:1.5}
+.discovery-place-photo{height:115px}
+.discovery-place-photo>span{font-size:10px}
+.discovery-place-copy strong{font-size:16px}
+.discovery-place-copy small{font-size:10px}
+.discovery-place-copy p{font-size:11px;line-height:1.6;min-height:35px}
+.discovery-place-action{font-size:11px}
+.discovery-place-copy{padding:11px 9px}
+.hero-note{font-size:11px;line-height:1.6}
+.map-status,.mini-map-status{font-size:12px;line-height:1.7}
+.map-service-note{font-size:11px;line-height:1.6}
+.stop-map-details>summary,.map-fullscreen{font-size:12px}
+.map-list-stop strong{font-size:12px}
+.map-list-stop small{font-size:10px}
+.map-popup-card>span,.map-popup-card>small{font-size:11px}
+.map-popup-card>a{font-size:12px}
+@media(max-width:900px){.discovery-workspace{grid-template-columns:1fr 1fr}.discovery-recommendation-heading small{font-size:10px}.discovery-place-photo{height:105px}.discovery-place-copy p{font-size:11px}}
+@media(max-width:650px){.discovery-welcome strong{font-size:20px}.discovery-welcome>span{font-size:12px}.discovery-message p,.discovery-composer input{font-size:13px}.trip-prompt-chips button{font-size:11px}.quick-search-toggle{font-size:11px}.discovery-recommendation-heading>span{font-size:13px}.discovery-recommendation-heading small{font-size:10px}.discovery-place-photo{height:120px}.discovery-place-copy strong{font-size:16px}.discovery-place-copy small{font-size:10px}.discovery-place-copy p,.discovery-place-action{font-size:11px}.hero-note{font-size:11px}.map-list-stop strong{font-size:12px}.map-list-stop small{font-size:10px}.map-status,.mini-map-status{font-size:12px}.map-service-note{font-size:11px}}

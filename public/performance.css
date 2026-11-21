@@ -1,0 +1,42 @@
+/* One glass layer per surface; animate opacity and transforms only. */
+:root,body{transition:none}
+body *{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body .nav-shell,body .discovery-workspace,body .dialog:not(.planner-dialog),body .chat-panel,body .destination-popover{backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important}
+.hero-slide{filter:none;transform:none!important;transition:opacity 1.1s ease;animation:none!important;will-change:auto}
+.hero-slide.active{will-change:opacity}
+.slide-dots{max-width:300px;gap:3px;flex-wrap:wrap;justify-content:center}
+.slide-dots button{width:9px;height:16px;background:transparent;position:relative;flex-shrink:0;transition:none}
+.slide-dots button:before{content:'';position:absolute;left:2px;top:6px;width:5px;height:5px;border-radius:50%;background:#ffffff5c}
+.slide-dots button.active{width:16px;background:transparent}
+.slide-dots button.active:before{width:12px;border-radius:5px;background:#fff}
+.hero-bottom .photo-caption{display:none}
+@media(max-width:650px){.hero-bottom{align-items:flex-start;gap:12px}.slideshow-controls{flex-wrap:wrap;max-width:165px;justify-content:flex-end}.slide-dots{order:3;max-width:165px;gap:2px}.slide-dots button{width:8px;height:13px}.slide-dots button:before{top:4px}.slide-dots button.active{width:14px}.slide-dots button.active:before{width:10px}.photo-location{max-width:45%;font-size:10px}}
+.nav-shell{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.discovery-workspace{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:enter-up .35s ease both}
+.discovery-composer,.discovery-place-photo>span,.dialog::backdrop,.form-label>input,.form-label>select,.form-label>textarea,.pace-options label>span,.interest-options label span,.day-filter-tabs button,.stop-stat-pills span,.transfer-note,.map-fit,.chat-message>div,.visual-stop-body,.trust-strip,.site-footer,.stop-map-details,.map-fullscreen{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.day-card,.sidebar-card,.browse-card,.jharkhand-card,.floating-note,.meal-card,.alternative-card,.discovery-banner,.visual-stop{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:rgba(255,255,255,.84)}
+:root[data-theme=dark] .day-card,:root[data-theme=dark] .sidebar-card,:root[data-theme=dark] .browse-card,:root[data-theme=dark] .jharkhand-card,:root[data-theme=dark] .meal-card,:root[data-theme=dark] .alternative-card,:root[data-theme=dark] .visual-stop{background:rgba(25,29,32,.94)}
+.dialog,.chat-panel,.destination-popover{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.dialog::backdrop{background:#0b142866}
+.discovery-orb{animation:none}
+.button,.category-pill,.discovery-place{transition:transform .18s ease,opacity .18s ease}
+.reveal{transition:opacity .3s ease,transform .3s ease}
+.trip-days-column .day-card{content-visibility:auto;contain-intrinsic-size:0 1100px;min-width:0;max-width:100%}
+.discovery-messages{max-height:380px;min-height:170px;scroll-behavior:auto;overscroll-behavior:contain;overflow-y:auto}
+.discovery-message p{white-space:pre-wrap}
+.discovery-inline-suggestions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 16px}
+.discovery-suggestions>.discovery-inline-suggestions{grid-column:1/-1;width:100%}
+.discovery-inline-suggestions .discovery-place-photo{height:95px}
+.discovery-inline-suggestions .discovery-place-copy strong{font-size:14px}
+.discovery-inline-suggestions .discovery-place-copy p{font-size:11px;line-height:1.55}
+.conversation-status{font-size:11px;line-height:1.6;color:#ffffffca;margin-top:9px;min-height:18px}
+.chat-cursor:after{content:'▍';opacity:.65}
+.planner-alternatives{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.planner-alternatives button{padding:8px 12px;border:1px solid currentColor;border-radius:20px;color:inherit}
+.planner-dialog{width:100vw;max-width:none;height:100dvh;max-height:none;border:0;border-radius:0;margin:0;padding:48px max(24px,calc(50vw - 380px));background:linear-gradient(135deg,var(--bg),var(--surface));backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.planner-dialog .form-label>input,.planner-dialog .form-label>select,.planner-dialog .form-label>textarea{background:var(--surface);border:1px solid var(--line)}
+.planner-dialog::backdrop{background:var(--bg)}
+.planner-dialog .planner-intro{margin-bottom:28px}
+.planner-dialog .dialog-close{position:fixed;top:20px;right:24px}
+@media(max-width:650px){.discovery-workspace,.dialog,.chat-panel{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.discovery-messages{max-height:380px}.discovery-inline-suggestions .discovery-place-photo{height:85px}.discovery-inline-suggestions .discovery-place-copy{padding:8px 5px}}
+@media(prefers-reduced-motion:reduce){.hero-slide,.button,.category-pill,.discovery-place,.reveal{transition:none}.discovery-workspace{animation:none}}

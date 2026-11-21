@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.seed/
+data/
+native/
+node_modules/
+public/runtime.json
+*.log
+*.download
+*.gguf
+*.zip
+*.tar.gz
+*.deb
+azure-appsettings*.json
+.DS_Store
+Thumbs.db

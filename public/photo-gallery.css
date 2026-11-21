@@ -1,0 +1,11 @@
+.landmark-gallery{display:flex;align-items:center;gap:10px;padding:12px 20px;border-bottom:1px solid var(--line,rgba(128,128,128,.2));overflow-x:auto;background:var(--surface,transparent)}
+.gallery-thumbnail{flex:0 0 92px;height:60px;padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;cursor:pointer;background:transparent}
+.gallery-thumbnail img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery-thumbnail[aria-pressed=true]{border-color:var(--accent,#8fbbe8)}
+.gallery-thumbnail:focus-visible{outline:3px solid var(--accent,#8fbbe8);outline-offset:3px}
+.gallery-count{font-size:12px;white-space:nowrap;color:var(--muted,#8292a5);margin-left:auto}
+.trip-days-column,.day-stops,.visual-stop,.landmark-gallery{min-width:0;max-width:100%}
+.visual-stop-body{overflow-wrap:anywhere}
+@media(max-width:900px){.trip-layout{grid-template-columns:minmax(0,1fr)}}
+.destination-gallery{border-radius:0 0 18px 18px;margin-top:-12px;margin-bottom:28px;padding-top:20px}.destination-gallery .gallery-count{white-space:normal;max-width:50%;text-align:right}
+@media(max-width:540px){.landmark-gallery{gap:8px;padding:10px 12px}.gallery-thumbnail{flex-basis:74px;height:50px}}

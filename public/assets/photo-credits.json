@@ -1,0 +1,52 @@
+{
+  "switzerland": {
+    "source": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "italy": {
+    "source": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "japan": {
+    "source": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "bali": {
+    "source": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "paris": {
+    "source": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "lisbon": {
+    "source": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "jaipur": {
+    "source": "https://images.unsplash.com/photo-1477587458883-47145ed94245",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "agra": {
+    "source": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "goa": {
+    "source": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  "kerala": {
+    "source": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  }
+}
